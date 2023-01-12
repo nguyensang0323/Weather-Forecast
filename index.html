@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5 Day Weather Forecast</title>
+    <link 
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" 
+      rel="stylesheet" 
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" 
+      crossorigin="anonymous">
+</head>
+<body>
+    <header class="text-center">
+        <h1 class="p-4 bg-success bg-gradient text-dark">Weather Forecast Dashboard</h1>
+    </header>
+
+    <div class="container text-center">
+        <div class="row">
+          <div id="find-container" class="col-3 d-flex d-inline-flex flex-column mb-4">
+            <label class="p-1 text-start fs-2">Find a City:</label>
+            <input id ="find-weather" class="p-1" type="find"></input>
+            <button id="find-button" class="p-1" type="button">Find</button>
+
+            <hr>
+            <div id="history-log" class="list-group">
+            </div>
+          </div>
+
+          <div class="col-9">
+            <div id="present-day" class="row mt-3">
+              <div class="col-12">
+                <div class="card">
+                    <div class="card-body border border-dark border-4">
+                      <div class="d-flex flex-row">
+                        <h4 id="present-city" class="p-1"></h4>
+                        <h4 id="present-date" class="p-1"></h4>
+                        <img id="current-icon"></img>
+                      </div>
+                      <p id="present-temp" class="text-start"></p>
+                      <p id="present-wind" class="text-start"></p>
+                      <p id="present-humidity" class="text-start"></p>
+                    </div>
+                  </div>
+              </div>
+            </div>
+
+            <section id="forecast" class="row">
+             
+              </section>
+          </div>
+        </div>
+      </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/dayjs@1.11.3/dayjs.min.js"
+      integrity="sha256-iu/zLUB+QgISXBLCW/mcDi/rnf4m4uEDO0wauy76x7U="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.10.4/dayjs.min.js"
+      integrity="sha512-0fcCRl828lBlrSCa8QJY51mtNqTcHxabaXVLPgw/jPA5Nutujh6CbTdDgRzl9aSPYW/uuE7c4SffFUQFBAy6lg=="
+      crossorigin="anonymous"
+    ></script>
+    <script 
+      src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.10.4/plugin/utc.min.js" 
+      integrity="sha512-m00bfmYnAl3plEBlQfeQUhw/U2uvmw29V2+jxSWpAjankMWS+zAsjezbKWDEJNXqWq9o9qQZSOiA2RKDpa4D5w==" 
+      crossorigin="anonymous"
+    ></script>
+    <script 
+      src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.10.4/plugin/timezone.min.js" 
+      integrity="sha512-pslqxxHAYPCxaSeFSmXXxDkLejD5dbFVC66aiVq0z4v7VTJBU+wqcG1OpNh4p3MjS2D6NCwz/H2QmSc7dXxryg==" 
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script src="./assets/script.js"> </script>
+</body>
+</html>
