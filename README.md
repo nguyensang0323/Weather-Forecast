@@ -12,5 +12,8 @@ To create this application, an HTML file and JavaScript file were made. A CSS fi
 - DayJS was used to better format the dates.
 
 ## Demo of Deployed Site
+https://drive.google.com/file/d/1B5tWXeNITaGciOgSRnJwgXq6WRq_C6Nr/view
 
 ## Project URLs
+- Deployed site URL: https://nguyensang0323.github.io/Weather-Forecast/
+- GitHub Repo URL: https://github.com/nguyensang0323/Weather-Forecast
